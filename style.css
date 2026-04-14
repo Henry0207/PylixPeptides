@@ -110,6 +110,10 @@ h1, h2, h3 {
   min-width: 160px;
 }
 
+.navbar {
+  backdrop-filter: blur(12px);
+}
+
 .dropdown-content a {
   display: block;
   padding: 8px;
