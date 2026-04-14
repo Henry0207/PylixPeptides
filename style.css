@@ -101,6 +101,19 @@ nav a:hover {
   animation: fadeIn 1.2s ease;
 }
 
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.no-glass {
+  background: none !important;
+  border: none !important;
+  backdrop-filter: none !important;
+}
+
 /* =========================
    PRODUCT GRID (SCALABLE)
 ========================= */
