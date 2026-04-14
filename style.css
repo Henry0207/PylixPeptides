@@ -63,6 +63,61 @@ h1, h2, h3 {
 /* =========================
    HEADER
 ========================= */
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #a8c7ff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--blue1);
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: rgba(10, 26, 58, 0.95);
+  border: 1px solid rgba(79, 172, 254, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 10px;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 header {
   display: flex;
