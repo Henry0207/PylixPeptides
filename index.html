@@ -2,132 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pylix Peptides</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pylix Peptides</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background: #0a0a0a;
-      color: #ffffff;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 50px;
-      border-bottom: 1px solid #222;
-    }
-
-    header h1 {
-      font-size: 20px;
-      letter-spacing: 2px;
-    }
-
-    nav a {
-      color: #aaa;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: white;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 150px 20px;
-      background: linear-gradient(to bottom, #0a0a0a, #111);
-    }
-
-    .hero h2 {
-      font-size: 50px;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-    }
-
-    .hero p {
-      color: #aaa;
-      font-size: 18px;
-    }
-
-    .section {
-      padding: 80px 20px;
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .section h3 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-
-    .products {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .card {
-      background: #111;
-      border: 1px solid #222;
-      padding: 30px;
-      width: 250px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      border: 1px solid #555;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      border-top: 1px solid #222;
-      color: #777;
-      font-size: 14px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 25px;
-      border: 1px solid #fff;
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .button:hover {
-      background: white;
-      color: black;
-    }
-  </style>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>PYLIX</h1>
+<!-- HEADER -->
+<header class="glass">
+  <h2>PYLIX</h2>
   <nav>
-    <a href="#about">About</a>
     <a href="#products">Products</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-  <h2>PYLIX PEPTIDES</h2>
+  <h1>PYLIX PEPTIDES</h1>
   <p>Quality • Researched • Performance</p>
-  <a href="#products" class="button">Explore</a>
+  <a href="#products" class="button">Explore Products</a>
 </section>
 
-<section id="about" class="section">
-  <h3>About</h3>
+<!-- PRODUCTS -->
+<section id="products" class="products">
+
+  <div class="card glass">
+    <h3>BPC-157</h3>
+    <p>Recovery & repair peptide</p>
+    <a href="bpc157.html" class="button">View Details</a>
+  </div>
+
+  <div class="card glass">
+    <h3>TB-500</h3>
+    <p>Advanced healing compound</p>
+    <a href="tb500.html" class="button">View Details</a>
+  </div>
+
+  <div class="card glass">
+    <h3>CJC-1295</h3>
+    <p>Growth hormone optimization</p>
+    <a href="cjc1295.html" class="button">View Details</a>
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="hero">
+  <h2>About Pylix</h2>
   <p>
     Pylix Peptides is built on precision, research, and performance.
     Our compounds are developed with a focus on purity, consistency,
@@ -135,33 +60,36 @@
   </p>
 </section>
 
-<section id="products" class="section">
-  <h3>Products</h3>
-  <div class="products">
-    <div class="card">
-      <h4>BPC-157</h4>
-      <p>Recovery & repair support</p>
-    </div>
+<!-- CONTACT -->
+<section id="contact" class="hero">
+  <h2>Contact</h2>
 
-    <div class="card">
-      <h4>TB-500</h4>
-      <p>Advanced healing compound</p>
-    </div>
+  <form action="https://formspree.io/f/your-id" method="POST">
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Your email" 
+      required
+      style="padding:10px; width:250px;"
+    >
+    <br><br>
 
-    <div class="card">
-      <h4>CJC-1295</h4>
-      <p>Growth hormone optimization</p>
-    </div>
-  </div>
+    <textarea 
+      name="message" 
+      placeholder="Your message"
+      style="padding:10px; width:250px; height:100px;"
+    ></textarea>
+
+    <br><br>
+
+    <button class="button">Send Message</button>
+  </form>
+
 </section>
 
-<section id="contact" class="section">
-  <h3>Contact</h3>
-  <p>Email: contact@pylix.com</p>
-</section>
-
-<footer>
-  © 2026 Pylix Peptides — All Rights Reserved
+<!-- FOOTER -->
+<footer class="glass" style="text-align:center; padding:20px; margin-top:50px;">
+  <p>© 2026 Pylix Peptides — All Rights Reserved</p>
 </footer>
 
 </body>

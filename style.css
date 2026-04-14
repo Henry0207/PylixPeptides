@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #111);
+  color: white;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+
+/* Layout */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+nav a {
+  color: #aaa;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 150px 20px;
+  animation: fadeIn 1.5s ease;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+/* Cards */
+.products {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 30px;
+  width: 260px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: white;
+  color: black;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
