@@ -12,6 +12,10 @@ body {
   animation: gradientMove 40s ease infinite;
 }
 
+header, section, footer {
+  position: relative;
+  z-index: 1;
+}
 
 /* Brand Colors */
 :root {
@@ -156,6 +160,11 @@ nav a:hover {
   color: white;
 }
 
+.button {
+  position: relative;
+  z-index: 2;
+}
+
 /* =========================
    FORMS
 ========================= */
@@ -226,15 +235,15 @@ body::before {
   width: 100%;
   height: 100%;
 
-  pointer-events: none; /* THIS FIXES CLICKING */
+  pointer-events: none;
 
   background: radial-gradient(
     circle at var(--x, 50%) var(--y, 50%),
-    rgba(79, 172, 254, 0.08),
-    transparent 30%
+    rgba(79, 172, 254, 0.06),
+    transparent 25%
   );
 
-  z-index: 0;
+  z-index: -1; /* 🔥 THIS FIXES THE CLICK ISSUE */
 }
 
 /* =========================
