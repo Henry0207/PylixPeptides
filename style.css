@@ -115,6 +115,15 @@ nav a:hover {
   backdrop-filter: none !important;
 }
 
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero {
+  background: transparent !important;
+}
+
 /* =========================
    PRODUCT GRID (SCALABLE)
 ========================= */
