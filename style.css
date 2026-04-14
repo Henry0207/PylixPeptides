@@ -112,8 +112,8 @@ nav a:hover {
   padding: 60px 40px;
   max-width: 1200px;
   margin: auto;
+  justify-items: center; /* FIXES CENTERING */
 }
-
 /* =========================
    PRODUCT CARDS
 ========================= */
@@ -122,6 +122,16 @@ nav a:hover {
   padding: 25px;
   text-align: center;
   transition: 0.3s;
+  width: 100%;
+  max-width: 260px; /* 🔥 keeps all cards same width */
+}
+
+.card h3 {
+  min-height: 40px;
+}
+
+.card p {
+  min-height: 35px;
 }
 
 .card h3 {
